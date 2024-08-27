@@ -1,0 +1,26 @@
+{
+    "name": "aivnlrj/IestEventos",
+    "description": "Sistema de registro a eventos y escaneo de códigos QR",
+    "type": "proyect",
+    "autoload": {
+        "psr-4": {
+            "MVC\\":"./",
+            "Controllers\\":"./controllers",
+            "Model\\":"./models"
+        }
+    },
+    "authors": [
+        {
+            "name": "imanol"
+        }
+    ],
+    "require": {
+        "endroid/qr-code": "^4.3"
+        
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.0"
+        }
+    }
+}

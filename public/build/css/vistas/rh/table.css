@@ -1,0 +1,2 @@
+table{border-collapse:collapse;width:100%;max-width:100%}td,th{text-align:left;padding:8px}th{background-color:#001d23;color:#fff}@media screen and (max-width:600px){table,tbody,td,th,thead,tr{display:block}thead tr{position:absolute;top:-9999px;left:-9999px}tr{border:1px solid #000}td{border-bottom:1px solid #000;position:relative;padding-left:50%}td:before{position:absolute;top:6px;left:6px;width:45%;padding-right:10px;white-space:nowrap;content:attr(data-label);font-weight:700}}
+/*# sourceMappingURL=table.css.map */
