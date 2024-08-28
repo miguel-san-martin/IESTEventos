@@ -1,1 +1,10 @@
 /public/build/img/
+public/.idea/.gitignore
+public/.idea/git_toolbox_blame.xml
+public/.idea/modules.xml
+public/.idea/public.iml
+public/.idea/sonarlint.xml
+public/.idea/vcs.xml
+public/.idea/inspectionProfiles/Project_Default.xml
+.idea/workspace.xml
+gitignore
