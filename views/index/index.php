@@ -1,22 +1,21 @@
+<!--SECCION QUE MUESTRA LOS 3 ULTIMOS EVENTOS-->
 <br>
 <div class="grid-contenedor-barCont">
     <div class="cell_barCont cell1_barCont">
-        <a class="a-noEffect" href="calendar">Próximos Eventos</a>
+        <a class="a-noEffect">Próximos Eventos</a>
     </div>
     <div class="cell_barCont cell2_barCont">
         <a class="a-barCont" href="calendar">Calendario de Eventos&nbsp;&nbsp;<i
                 class="fa-regular fa-calendar-days"></i></a>
     </div>
-    <div class="cell_barCont cell3_barCont">
-        <a class="a-noEffect" href="calendar">Próximos Eventos&nbsp;&nbsp;&nbsp;<i
-                class="fa-regular fa-calendar-days"></i></a>
-    </div>
+
 </div>
 <div class="grid-contenedor-eventosLP">
     <?php
     $i = 1;
     foreach ($eventos as $evento) {
         if ($i > 3) break;
+
         $token = $evento['token'];
         $banner = $evento['banner_principal'];
     ?>
@@ -37,6 +36,7 @@
         }
     }
     ?>
+<!--    IMAGEN POR DEFECTO LA NO.4-->
     <div class="cell_eventosLP cell4_eventosLP">
         <img onclick="location.href='calendar';" src="http://localhost/IESTEventos/build/img/CalendarioDefault.png" alt="">
     </div>
