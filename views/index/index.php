@@ -21,7 +21,7 @@
         $banner = $evento['banner_principal'];
     ?>
         <div class="cell_eventosLP cell<?php echo $i; ?>_eventosLP">
-            <img onclick="location.href='evento?id=<?php echo $token ?>';" src="https://sie.iest.edu.mx/IESTEventos/build/img/eventos/<?php echo $token ?>/<?php echo $banner ?>" alt="">
+            <img onclick="location.href='evento?id=<?php echo $token ?>';" src="http://localhost/IESTEventos/build/img/eventos/<?php echo $token ?>/<?php echo $banner ?>" alt="">
         </div>
     <?php
         $i++;
@@ -31,13 +31,13 @@
         for ($j = $i; $j < 4; $j++) {
     ?>
             <div class="cell_eventosLP cell<?php echo $j; ?>_eventosLP">
-                <img onclick="location.href='calendar';" src="https://sie.iest.edu.mx/IESTEventos/build/img/CalendarioDefault.png" alt="">
+                <img onclick="location.href='calendar';" src="http://localhost/IESTEventos/build/img/CalendarioDefault.png" alt="">
             </div>
     <?php
         }
     }
     ?>
     <div class="cell_eventosLP cell4_eventosLP">
-        <img onclick="location.href='calendar';" src="https://sie.iest.edu.mx/IESTEventos/build/img/CalendarioDefault.png" alt="">
+        <img onclick="location.href='calendar';" src="http://localhost/IESTEventos/build/img/CalendarioDefault.png" alt="">
     </div>
 </div>

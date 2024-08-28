@@ -1,5 +1,5 @@
 <div class="bg-grisBajo">
-    <a class="" href="https://sie.iest.edu.mx/IESTEventos/Coordinador/" style="font-size:2rem;padding:1rem;margin:1rem;"><span>/Regresar al DashBoard</span></a>
+    <a class="" href="http://localhost/IESTEventos/Coordinador/" style="font-size:2rem;padding:1rem;margin:1rem;"><span>/Regresar al DashBoard</span></a>
 </div>
 <div class="dashboard-derecho bg-naranja">
     <h2 class=" ">Evento: <?php echo $nombreevento?></h2>
@@ -33,5 +33,5 @@
     </div>
 </div>
 <?php $script = "
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/coordinador/subevento.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/coordinador/subevento.js'></script>
 "; ?>

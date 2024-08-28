@@ -1,7 +1,7 @@
 <?php 
 function makeApiRequest($params) {
     // URL de la API
-    $url = 'https://sie.iest.edu.mx/api/proyecto-iest-alumnos/api.php';
+    $url = 'http://localhost/api/proyecto-iest-alumnos/api.php';
 
     // Codificar los parámetros en la URL
     $queryString = http_build_query($params);

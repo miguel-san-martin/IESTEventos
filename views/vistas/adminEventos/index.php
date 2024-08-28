@@ -31,6 +31,6 @@
 </div>
 
 <?php $script = "
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/general/dashboard.js'></script>
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/adminEventos/index.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/general/dashboard.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/adminEventos/index.js'></script>
 "; ?>

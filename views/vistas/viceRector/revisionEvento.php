@@ -20,5 +20,5 @@
   <p style="width: 20%;" class="boton naranja centrar-texto">Enviar</p>
 </div>
 <?php $script = "
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/vicerector/index.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/vicerector/index.js'></script>
 "; ?>

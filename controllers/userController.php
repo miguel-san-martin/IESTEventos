@@ -107,7 +107,7 @@ class userController
         $auth = $_SESSION['auth'] ?? false;
         $tipo = $_SESSION['tipo'] ?? false;
         if (!$auth||!$_SESSION['tipo']) {
-            header("Location: https://sie.iest.edu.mx/IESTEventos/");
+            header("Location: http://localhost/IESTEventos/");
         }
         $tokenqr = $_SESSION['iestcode'];
         $writer = new \Endroid\QrCode\Writer\PngWriter();

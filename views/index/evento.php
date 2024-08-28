@@ -30,7 +30,7 @@ foreach ($eventoselecc['info'] as $evento):
 
 <div class="grid-container-mainEvento">
     <div class="cell-mainEvento cell1-mainEvento">
-        <img src="https://sie.iest.edu.mx/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
+        <img src="http://localhost/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
     </div>
     <div class="cell-mainEvento cell2-mainEvento">
         <?php echo ucwords($evento['nombre']);?>
@@ -146,6 +146,6 @@ function obtenerFechaFormateada($date) {
 <br><br>
 <?php $script = "
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/index/evento.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/index/evento.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
 "; ?>

@@ -333,7 +333,7 @@
 </div>
 
 <?php $script = "
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/coordinador/crearEvento.js'></script>
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/coordinador/revisionEventos.js'></script>
-    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/coordinador/vereventos.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/coordinador/crearEvento.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/coordinador/revisionEventos.js'></script>
+    <script src='http://localhost/IESTEventos/build/js/vistas/coordinador/vereventos.js'></script>
 "; ?>

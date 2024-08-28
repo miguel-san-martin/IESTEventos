@@ -16,7 +16,7 @@ class CoordinadorController{
         $auth=$_SESSION['auth']??false;
         $tipo=$_SESSION['tipo']??0;
         if(!$auth ||$tipo!=5){
-            header("Location: https://sie.iest.edu.mx/IESTEventos/");
+            header("Location: http://localhost/IESTEventos/");
         } else {
             $resultado = 0;
             $carrera = $_SESSION['carrera']??NULL;
@@ -83,7 +83,7 @@ class CoordinadorController{
         $auth=$_SESSION['auth']??false;
         $tipo=$_SESSION['tipo']??0;
         if(!$auth ||$tipo!=5){
-            header("Location: https://sie.iest.edu.mx/IESTEventos/");
+            header("Location: http://localhost/IESTEventos/");
         }
         $router->render('vistas/coordinador/semestre', []);
     }
@@ -337,7 +337,7 @@ class CoordinadorController{
         $auth=$_SESSION['auth']??false;
         $tipo=$_SESSION['tipo']??0;
         if(!$auth ||$tipo!=5){
-            header("Location: https://sie.iest.edu.mx/IESTEventos/");
+            header("Location: http://localhost/IESTEventos/");
         } else {
             $id_Evento = $_GET['id'] ?? null;
             if ($id_Evento === null||$id_Evento =='') {
@@ -621,7 +621,7 @@ class CoordinadorController{
         $auth=$_SESSION['auth']??false;
         $tipo=$_SESSION['tipo']??0;
         if(!$auth ||$tipo!=5){
-            header("Location: https://sie.iest.edu.mx/IESTEventos/");
+            header("Location: http://localhost/IESTEventos/");
         }
         $id_Evento = $_GET['id'] ?? header('Location:/');
         $evento = $_GET['evento'];
