@@ -14,9 +14,9 @@ class userController
         $params = array(
             'servicio' => 'consulta',
             'accion' => 'SelectAllInfoPublicados_v2',
+            'tipoRespuesta' => 'json',
             'setUserid' => $_SERVER['REMOTE_ADDR'],
             'setUserip' => $_SESSION['id_user'],
-            'tipoRespuesta' => 'json',
         );
         $SelectAllInfoEventos = makeApiRequest($params);
         $response = array();

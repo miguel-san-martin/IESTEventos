@@ -176,6 +176,7 @@ class CoordinadorController{
                         $params = array(
                             'servicio' => 'crea',
                             'accion' => 'InsertInfoEventoLugarExistente',
+                            // 'tipoRespuesta' => 'json',
                             'categoria' => $categoria,
                             'token' => $token,
                             'nombre' => $nombre,
