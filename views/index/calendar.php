@@ -38,7 +38,7 @@
 <div id="fadeInEvento" class="animatable fadeInDown" style="padding: 1rem">
     <div class="grid-contenedor-eventoCalendar" onclick="location.href='evento?id=<?php echo $evento['token']?>';">
         <div class="cell_eventoCalendar cell1_eventoCalendar">
-            <img class="img-eventoCalendar" src="http://localhost/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
+            <img src="<?php echo ($evento['banner_principalv2']);?>">
         </div>
         <div class="cell_eventoCalendar cell2_eventoCalendar eventoCalendarFH">
             <?php echo ucfirst($evento['modalidad']); ?>

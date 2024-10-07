@@ -30,7 +30,7 @@ foreach ($eventoselecc['info'] as $evento):
 
 <div class="grid-container-mainEvento">
     <div class="cell-mainEvento cell1-mainEvento">
-        <img src="http://localhost/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
+    <img src="<?php echo ($evento['banner_principalv2']);?>">
     </div>
     <div class="cell-mainEvento cell2-mainEvento">
         <?php echo ucwords($evento['nombre']);?>
