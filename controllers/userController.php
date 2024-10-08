@@ -15,18 +15,26 @@ class userController
             'servicio' => 'consulta',
             'accion' => 'SelectAllInfoPublicados_v2',
             'tipoRespuesta' => 'json',
-            'setUserid' => $_SERVER['REMOTE_ADDR'],
-            'setUserip' => $_SESSION['id_user'],
+            //'ipuser' => $_SERVER['REMOTE_ADDR'],
+            'ipuser' => 'localhost',
+            'iduser' => $_SESSION['id_user'],
         );
         $SelectAllInfoEventos = makeApiRequest($params);
         $response = array();
         // Recorrer la información de eventos obtenida
-        foreach ($SelectAllInfoEventos['info'] as $evento) {
-            // Si el estatus del evento es '1', agregarlo a la respuesta
-            if ($evento['estatusid'] == '6') {
-                $response[] = $evento;
+        //var_dump($SelectAllInfoEventos);
+        if(isset($SelectAllInfoEventos)){
+
+            foreach ($SelectAllInfoEventos['info'] as $evento) {
+                // Si el estatus del evento es '1', agregarlo a la respuesta
+                if ($evento['estatusid'] == '1') {
+                    $response[] = $evento;
+                }
             }
+        }else{
+            echo "Error al consultar los eventos publicados";
         }
+        //var_dump($response);
         $router->render('index/index', ["eventos" => $response]);
 
     }

@@ -32,7 +32,7 @@ class CoordinadorController{
                 'servicio' => 'consulta',
                 'accion' => 'SelectAllEstudiantesbyCarrera',
                 'tipoRespuesta' => 'json',
-                'carrera'=> $carrera
+                'carrera'=> 2
             );
             /* RESPUESTA DE API */
             $alumnosirregulares=makeApiRequest($params);

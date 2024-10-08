@@ -48,7 +48,7 @@ class adminEventosController
             /* API APLICADA */
             $paramsSelectAllInfoEventos = array(
                 'servicio' => 'consulta',
-                'accion' => 'SelectAllInfoEventos',
+                'accion' => 'SelectAllInfoEventosV2',
                 'tipoRespuesta' => 'json'
             );
             $SelectAllInfoEventos = makeApiRequest($paramsSelectAllInfoEventos);
