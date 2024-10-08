@@ -14,9 +14,6 @@
 </div>
 <div class="grid-contenedor-eventosLP">
     <?php
-	//$totalEventos = count($eventos); // Contar los elementos en el array
-    //echo "<p>Total de eventos: $totalEventos</p>"; // Mostrar el total de eventos
-    //Si eventos llega vacio, ni entra al forech
     $i = 1;
     foreach ($eventos as $evento) {
         if ($i > 3) break;

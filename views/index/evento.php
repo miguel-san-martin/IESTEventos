@@ -69,8 +69,6 @@ foreach ($eventoselecc['info'] as $evento):
     </div>
     <div class="cell-mainEvento cell7-mainEvento">
         <div class="info-mainEvento">
-            <i class="fa-solid fa-dollar-sign icon-color-orange"></i>&nbsp;
-            Gratuito
         </div>
     </div>
     <div class="cell-mainEvento cell11-mainEvento">

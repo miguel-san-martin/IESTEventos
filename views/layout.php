@@ -1123,77 +1123,29 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const iframe = document.getElementById('miIframe');
-            iframe.onload = () => {
-                // Enviar un mensaje al iframe con el valor del padre
-                const mensaje = document.getElementById('id_user').textContent;
-                iframe.contentWindow.postMessage(mensaje, 'http://localhost:4200'); // Asegúrate de usar el origen correcto
-                console.log("Se envio el mensaje")
-            };
+            if(iframe){
+                iframe.onload = () => {
+                    // Enviar un mensaje al iframe con el valor del padre
+                    const mensaje = document.getElementById('id_user').textContent;
+                    iframe.contentWindow.postMessage(mensaje, 'http://localhost:4200'); // Asegúrate de usar el origen correcto
+                    console.log("Se envio el mensaje")
+                };
+            }
         });
 
     </script>
     <footer class="footer-section">
     <div class="contenedor">
-              <div class="footer-cta pt-5 ">
-                  <div class="footer_tels">
-                      
-                      <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="fas fa-phone"></i>
-                              <div class="cta-text">
-                                  <h4>Comunicate</h4>
-                                  <span>833 230.2550 Ext. 2594 <br>Servicios Escolares</span>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!-- <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="far fa-envelope-open"></i>
-                              <div class="cta-text">
-                                  <h4>Mandanos Correo</h4>
-                                  <span>iest@iest.edu.mx</span>
-                              </div>
-                          </div>
-                      </div> -->
-                      <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="fas fa-map-marker-alt"></i>
-                              <div class="cta-text">
-                                  <h4>Visitanos</h4>
-                                  <span>Av. Dr. Burton E. Grossman 501 Pte. Col. Tampico-Altamira Sector 1 C.P. 89605 <br>Altamira, Tam., México </span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
               <div class="footer-content pt-5 pb-1">
                   <div class="row">
                       <div class="col-xl-4 col-lg-4 mb-50">
                           <div class="footer-widget">
-                              <!-- <div class="footer-logo">
-                                  <a href="https://www.anahuac.mx/iest/"><img id="icon_iest" src="http://www.anahuac.mx/iest/sites/default/files/gbb-uploads/logotipo-institucional-dcnfov.png" alt=""></a>
-                              </div> -->
                               <div class="footer-text">
                                   <p>Instituto de Estudios Superiores de Tamaulipas, es una institución acreditada lisa <br> y llana por la Federación de Instituciones Mexicanas Particulares de Educación Superior A.C.</p>
                               </div>
                               <div class="footer-social-icon">
-                                <a href="#"><span>Pagina realizada por <i class="fa-solid fa-eye"></i></span>
-                                    <div class="footer-text">
-                                        <p>Angel Imanol Villegas Nicanor <br>Luis Roberto Juarez Martinez</p>
-                                    </div>
                                 </a>
                               </div>
-                              <div class="footer-social-icon">
-                                  <span>Redes Sociales</span>
-                                  <ul class="social_icon">
-                                    <li><a href="https://www.facebook.com/iestanahuac"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/iestanahuac/"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@iestanahuac2431"><i class="fa-brands fa-youtube"></i></a></li>
-                                </ul>
-                                
-                              </div>
-
                           </div>
                       </div>
 
