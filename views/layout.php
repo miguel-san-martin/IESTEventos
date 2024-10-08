@@ -516,6 +516,7 @@
                 </div>
             </div>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+        <iframe id="miIframe" src="http://localhost:4200/panel/view" width="100%" style="height: 90vh"></iframe>
     <?php elseif (strpos($currentURL, '/Vicerector') !== false) : ?>
         <!-- INICIO -->
         <?php if ($_SESSION['tipo'] ?? null == 5) :; ?>
@@ -1000,7 +1001,7 @@
         <div class="ocultar" id="division" value="<?php echo $_SESSION['division'] ?>"><?php echo $_SESSION['division'] ?></div>
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null ?>"><?php echo $_SESSION['id_user']??null ?></div>
-        <div class="video-container">
+        <div class="video-container" style="max-height: 52vh;">
             <video autoplay loop muted>
                 <source src="http://localhost/IESTEventos/build/img/index/ejemplovideo2.mp4" type="video/mp4">
             </video>
@@ -1119,6 +1120,18 @@
     <script src='http://localhost/IESTEventos/build/js/index/navbar.js'></script>
     <script src="http://localhost/IESTEventos/build/js/general/variables.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.getElementById('miIframe');
+            iframe.onload = () => {
+                // Enviar un mensaje al iframe con el valor del padre
+                const mensaje = document.getElementById('id_user').textContent;
+                iframe.contentWindow.postMessage(mensaje, 'http://localhost:4200'); // Asegúrate de usar el origen correcto
+                console.log("Se envio el mensaje")
+            };
+        });
+
+    </script>
     <footer class="footer-section">
     <div class="contenedor">
               <div class="footer-cta pt-5 ">

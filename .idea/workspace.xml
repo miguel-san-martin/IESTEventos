@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a6368631-07e6-418a-b02f-f14de84170d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/CoordinadorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/CoordinadorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/adminEventosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/adminEventosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/authController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/general/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/general/variables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/index/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/index/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/vistas/coordinador/crearEvento.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/vistas/coordinador/crearEvento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/vistas/coordinador/editarEvento.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/vistas/coordinador/editarEvento.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/vistas/coordinador/revisionEventos.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/vistas/coordinador/revisionEventos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/js/vistas/vicerector/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/js/vistas/vicerector/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/vistas/coordinador/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/vistas/coordinador/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/layout.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
@@ -89,6 +102,18 @@
       <updated>1724801652628</updated>
       <workItem from="1724801654280" duration="495000" />
       <workItem from="1724802173984" duration="379000" />
+      <workItem from="1724947448490" duration="6664000" />
+      <workItem from="1725030896354" duration="10136000" />
+      <workItem from="1725488186883" duration="2093000" />
+      <workItem from="1725545910031" duration="5120000" />
+      <workItem from="1725575387253" duration="1029000" />
+      <workItem from="1725642792377" duration="1626000" />
+      <workItem from="1725895261680" duration="15808000" />
+      <workItem from="1726065778795" duration="690000" />
+      <workItem from="1726160065395" duration="1963000" />
+      <workItem from="1726186520658" duration="1084000" />
+      <workItem from="1726584300834" duration="2390000" />
+      <workItem from="1726786397660" duration="2213000" />
     </task>
     <servers />
   </component>
