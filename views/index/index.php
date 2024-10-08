@@ -12,11 +12,11 @@
                 class="fa-regular fa-calendar-days"></i></a>
     </div>
 </div>
-<div class="grid-contenedor-eventosLP">
+<div class="grid-contenedor-eventosLP" style="height: auto;padding:40px 0 40px 0;">
     <?php
     $i = 1;
     foreach ($eventos as $evento) {
-        if ($i > 3) break;
+        if ($i > 7) break;
         $token = $evento['token'];
         $banner = $evento['banner_principal'];
     ?>
