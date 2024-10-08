@@ -1,7 +1,7 @@
-var lugares = "",
-  eventos = "",
-  fechaOcupada = [],
-  horarioOcupado = [];
+var lugares = "";
+var eventos = "";
+var fechaOcupada = [];
+var horarioOcupado = [];
 const evento = {
     nombre: "",
     descripcion: "",
@@ -27,87 +27,109 @@ const evento = {
   },
   cooordinador = { id: "" },
   idselec = "";
-function mostrarseccion() {
-  const e = document.querySelector("#crear"),
-    o = document.querySelector("#vereventos"),
-    n =
-      (document.querySelector("#listaalumnos"),
-      document.querySelector("#revision")),
-    t = document.querySelector("#paso-1"),
-    i = document.querySelector("#paso-2"),
-    a = document.querySelector("#paso-3"),
-    c = document.querySelector("#paso-4");
-  document.querySelector("#paso-5");
-  var r = t;
-  e.addEventListener("click", function () {
-    r.classList.add("ocultar"),
-      (r = i).classList.remove("ocultar"),
+//Primera funcion que se manda a llamar tras cargar crearEventos
+function mostrarSeccion() {
+    // Selección de elementos del DOM
+    const botonCrear = document.querySelector("#crear");
+    const botonVerEventos = document.querySelector("#vereventos");
+    const botonRevision = document.querySelector("#revision");
+    const paso1 = document.querySelector("#paso-1");
+    const paso2 = document.querySelector("#paso-2");
+    const paso3 = document.querySelector("#paso-3");
+    const paso4 = document.querySelector("#paso-4");
+    
+    let pasoActual = paso1;
+  
+    // Evento para el botón "Crear"
+    botonCrear.addEventListener("click", function () {
+      pasoActual.classList.add("ocultar");
+      pasoActual = paso2;
+      pasoActual.classList.remove("ocultar");
+  
       Swal.fire({
         title: "Un momento por favor!",
         icon: "info",
         timer: 300,
-        showConfirmButton: !1,
-        timerProgressBar: !0,
+        showConfirmButton: false,
+        timerProgressBar: true,
         customClass: { popup: "swal" },
         didOpen: () => {
-          Form_crearEvento(), apieventos(), Swal.showLoading(), Swal.close();
+          Form_crearEvento();
+          apieventos();
+          Swal.showLoading();
+          Swal.close();
         },
       });
-    const e = document.getElementById("btn_info2"),
-      o = document.getElementById("crear_1"),
-      n = document.getElementById("crear_2"),
-      t = document.getElementById("crear_regresar");
-    e.addEventListener("click", function () {
-      "Continuar" != e.textContent
-        ? Swal.fire({
+  
+      const btnInfo2 = document.getElementById("btn_info2");
+      const crear1 = document.getElementById("crear_1");
+      const crear2 = document.getElementById("crear_2");
+      const crearRegresar = document.getElementById("crear_regresar");
+  
+      btnInfo2.addEventListener("click", function () {
+        if (btnInfo2.textContent !== "Continuar") {
+          Swal.fire({
             icon: "warning",
             title: "Oops...",
-            text: "Acomplete toda la informacion para continuar",
+            text: "Complete toda la información para continuar",
             customClass: { popup: "swal" },
-          })
-        : (calcularfechas(),
-          o.classList.add("ocultar"),
-          n.classList.remove("ocultar"),
-          t.classList.remove("ocultar"),
-          t.addEventListener("click", function () {
-            o.classList.remove("ocultar"),
-              n.classList.add("ocultar"),
-              t.classList.add("ocultar");
-          }));
+          });
+        } else {
+          calcularfechas();
+          crear1.classList.add("ocultar");
+          crear2.classList.remove("ocultar");
+          crearRegresar.classList.remove("ocultar");
+  
+          crearRegresar.addEventListener("click", function () {
+            crear1.classList.remove("ocultar");
+            crear2.classList.add("ocultar");
+            crearRegresar.classList.add("ocultar");
+          });
+        }
+      });
     });
-  }),
-    n.addEventListener("click", function () {
-      r.classList.add("ocultar"),
-        (r = a).classList.remove("ocultar"),
-        Swal.fire({
-          title: "Cargando...",
-          icon: "info",
-          html: "Validando datos, por favor espere",
-          allowOutsideClick: !1,
-          footer: '<p class="color-grisBajo no-margin">No cierre la pagina</p>',
-          customClass: { popup: "swalalert" },
-          didOpen: () => {
-            Swal.showLoading(), 
-            revisionEventos();
-          },
-        });
-    }),
-    o.addEventListener("click", function () {
-      r.classList.add("ocultar"),
-        (r = c).classList.remove("ocultar"),
-        Swal.fire({
-          title: "Cargando...",
-          icon: "info",
-          html: "Validando datos, por favor espere",
-          allowOutsideClick: !1,
-          footer: '<p class="color-grisBajo no-margin">No cierre la pagina</p>',
-          customClass: { popup: "swalalert" },
-          didOpen: () => {
-            Swal.showLoading(), verEventos();
-          },
-        });
+  
+    // Evento para el botón "Revisión"
+    botonRevision.addEventListener("click", function () {
+      pasoActual.classList.add("ocultar");
+      pasoActual = paso3;
+      pasoActual.classList.remove("ocultar");
+  
+      Swal.fire({
+        title: "Cargando...",
+        icon: "info",
+        html: "Validando datos, por favor espere",
+        allowOutsideClick: false,
+        footer: '<p class="color-grisBajo no-margin">No cierre la página</p>',
+        customClass: { popup: "swalalert" },
+        didOpen: () => {
+          Swal.showLoading();
+          revisionEventos();
+        },
+      });
     });
-}
+  
+    // Evento para el botón "Ver Eventos"
+    botonVerEventos.addEventListener("click", function () {
+      pasoActual.classList.add("ocultar");
+      pasoActual = paso4;
+      pasoActual.classList.remove("ocultar");
+  
+      Swal.fire({
+        title: "Cargando...",
+        icon: "info",
+        html: "Validando datos, por favor espere",
+        allowOutsideClick: false,
+        footer: '<p class="color-grisBajo no-margin">No cierre la página</p>',
+        customClass: { popup: "swalalert" },
+        didOpen: () => {
+          Swal.showLoading();
+          verEventos();
+        },
+      });
+    });
+  }
+  
 function calcularfechas() {
   for (
     var e = new Date(evento.fechaini),
@@ -306,11 +328,11 @@ async function crearEvento() {
         formDataEvento.append("virtual_plataformas", evento.online.plataformas);
         break;
     }
-  
+        console.log(formDataEvento)
         const urlCrearEvento = baseurl + "crearevento",
         respuesta = await fetch(urlCrearEvento, { method: "POST", body: formDataEvento }),
         resultado = await respuesta.json();
-        console.log(respuesta);
+
         
     
   
@@ -323,7 +345,7 @@ async function crearEvento() {
         timer: 1500,
         customClass: { popup: "swal" },
       }).then(() => {
-        window.location.reload();
+        // window.location.reload();
       });
     } else {
       Swal.fire({
@@ -339,9 +361,11 @@ async function crearEvento() {
   
 function verificarObjetoLleno(e) {
   const o = document.getElementById("btn_info2");
+  
   let n = Object.values(e).every(
     (e) => "string" == typeof e && "" !== e.trim()
   );
+  console.log(Object.values(e));
   o.classList.toggle("verde", n),
     o.classList.toggle("rojo", !n),
     (o.textContent = n
@@ -608,8 +632,13 @@ function agegardivisiones(e) {
       ? n.classList.add("ocultar")
       : n.classList.remove("ocultar");
 }
+
+// Cuando el documento ha sido completamente cargado y el DOM
 document.addEventListener("DOMContentLoaded", function () {
-  mostrarseccion();
-  var e = document.querySelector("#id_user").textContent;
-  (evento.responsable_alta = e), (cooordinador.id = e);
+  mostrarSeccion();  // Llama a la función `mostrarSeccion()`.
+  var usuarioId = document.querySelector("#id_user").textContent;
+  
+  // Selecciona el elemento con el ID `id_user` y obtiene su contenido de texto.
+  (evento.responsable_alta = usuarioId), (cooordinador.usuarioId = usuarioId);
+  // Asigna el valor de `usuarioId` a las propiedades `responsableAlta` de `evento` y `usuarioId` de `coordinador`.
 });
