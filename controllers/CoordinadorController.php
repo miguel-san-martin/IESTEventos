@@ -578,7 +578,7 @@ class CoordinadorController{
             exit(json_encode($response));
         }        
     }
-    public static function eliminarstaff()
+/*     public static function eliminarstaff()
     {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $id = $_POST['id'];
@@ -602,7 +602,7 @@ class CoordinadorController{
                 exit(son_encode($response));
             }
         }
-    }
+    } */
     //Subeventos
     public static function apisubeventos(){
         
