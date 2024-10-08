@@ -1028,18 +1028,6 @@
                             Panel</a>
                         </div>&nbsp;
                         <?php endif; ?>
-                        <?php if ($tipo == 6) : ?>
-                        <div><a href="Vicerector" class="cell2_menuIndex">
-                            <i class="fa-solid fa-table-list"></i>&nbsp;    
-                            Panel</a>
-                        </div>&nbsp;
-                        <?php endif; ?>
-                        <?php if ($tipo == 7) : ?>
-                        <div><a href="AdminEventos" class="cell2_menuIndex">
-                            <i class="fa-solid fa-table-list"></i>&nbsp;    
-                            Panel</a>
-                        </div>&nbsp;
-                        <?php endif; ?>
                         <?php if ($tipo >= 2) : ?>
                         <div><a href="profile" class="cell2_menuIndex">
                             <i class="fa-solid fa-user"></i>&nbsp;    
