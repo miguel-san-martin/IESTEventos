@@ -11,13 +11,14 @@ class userController
 {
     public static function index(Router $router)
     {
+
         $params = array(
             'servicio' => 'consulta',
             'accion' => 'SelectAllInfoPublicados_v2',
             'tipoRespuesta' => 'json',
             //'ipuser' => $_SERVER['REMOTE_ADDR'],
             'ipuser' => 'localhost',
-            'iduser' => $_SESSION['id_user'],
+            'iduser' => isset($_SESSION['id_user'])?$_SESSION['id_user']:0
         );
         $SelectAllInfoEventos = makeApiRequest($params);
         $response = array();
