@@ -516,7 +516,9 @@
                 </div>
             </div>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-        <iframe id="miIframe" src="http://localhost:4200/panel/view" width="100%" style="height: 90vh"></iframe>
+        <?php if($_SESSION['id_user'] == '24812') :; ?>  
+        <iframe id="miIframe" src="https://sie.iest.edu.mx/app/IESTEventos/" width="100%" style="height: 90vh"></iframe>
+        <?php endif; ?> 
     <?php elseif (strpos($currentURL, '/Vicerector') !== false) : ?>
         <!-- INICIO -->
         <?php if ($_SESSION['tipo'] ?? null == 5) :; ?>
