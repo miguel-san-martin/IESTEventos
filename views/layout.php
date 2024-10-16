@@ -13,11 +13,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IestEventos</title>
-    <link rel="stylesheet" href="http://localhost/IESTEventos/build/css/app.css?v=<?php echo $version; ?>">
+    <link rel="stylesheet" href="https://sie.iest.edu.mx/IESTEventos/build/css/app.css?v=<?php echo $version; ?>">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="http://localhost/IESTEventos/build/img/index/logo.svg">
+    <link rel="shortcut icon" href="https://sie.iest.edu.mx/IESTEventos/build/img/index/logo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -33,7 +33,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -155,7 +155,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -278,7 +278,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -401,7 +401,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -516,7 +516,7 @@
                 </div>
             </div>
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-        <?php if($_SESSION['id_user'] == '24812') :; ?>  
+        <?php if(in_array($_SESSION['id_user'], ['24812', '3924'])):; ?>  
         <iframe id="miIframe" src="https://sie.iest.edu.mx/app/IESTEventos/" width="100%" style="height: 90vh"></iframe>
         <?php endif; ?> 
     <?php elseif (strpos($currentURL, '/Vicerector') !== false) : ?>
@@ -527,7 +527,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -650,7 +650,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -774,10 +774,10 @@
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="video-container">
             <video autoplay loop muted>
-                <source src="http://localhost/IESTEventos/build/img/index/Banner_Calendario.mp4" type="video/mp4">
+                <source src="https://sie.iest.edu.mx/IESTEventos/build/img/index/Banner_Calendario.mp4" type="video/mp4">
             </video>
             <div class="grid-contenedor-navbarCalendar">
-                <div class="cell_navbarCalendar cell1_navbarCalendar" onclick="window.location.href = 'http://localhost/IESTEventos/'">
+                <div class="cell_navbarCalendar cell1_navbarCalendar" onclick="window.location.href = 'https://sie.iest.edu.mx/IESTEventos/'">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarCalendar cell2_navbarCalendar">
@@ -883,7 +883,7 @@
         <?php endif; ?>
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null?>"><?php echo $_SESSION['id_user']??null?></div>
         <div class="grid-contenedor-navbarSUGeneral">
-                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='http://localhost/IESTEventos/';">
+                <div class="cell_navbarSUGeneral cell1_navbarSUGeneral"  onclick="location.href='https://sie.iest.edu.mx/IESTEventos/';">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarSUGeneral cell2_navbarSUGeneral">
@@ -1005,10 +1005,10 @@
         <div class="ocultar" id="id_user" value="<?php echo $_SESSION['id_user']??null ?>"><?php echo $_SESSION['id_user']??null ?></div>
         <div class="video-container" style="max-height: 52vh;">
             <video autoplay loop muted>
-                <source src="http://localhost/IESTEventos/build/img/index/ejemplovideo2.mp4" type="video/mp4">
+                <source src="https://sie.iest.edu.mx/IESTEventos/build/img/index/ejemplovideo2.mp4" type="video/mp4">
             </video>
             <div class="grid-contenedor-navbarLPGeneral">
-                <div class="cell_navbarLPGeneral cell1_navbarLPGeneral" onclick="window.location.href = 'http://localhost/IESTEventos/'">
+                <div class="cell_navbarLPGeneral cell1_navbarLPGeneral" onclick="window.location.href = 'https://sie.iest.edu.mx/IESTEventos/'">
                     <span class="cell1_orange">IEST</span><span class="cell1_white">Eventos</span>
                 </div>
                 <div class="cell_navbarLPGeneral cell2_navbarLPGeneral">
@@ -1107,8 +1107,8 @@
     <?php echo $contenido; ?>
 
     <?php echo $script ?? ''; ?>
-    <script src='http://localhost/IESTEventos/build/js/index/navbar.js'></script>
-    <script src="http://localhost/IESTEventos/build/js/general/variables.js"></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/index/navbar.js'></script>
+    <script src="https://sie.iest.edu.mx/IESTEventos/build/js/general/variables.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1116,8 +1116,9 @@
             if(iframe){
                 iframe.onload = () => {
                     // Enviar un mensaje al iframe con el valor del padre
+                    //iframe.contentWindow.document.getElementById("idiestpost").innerText = document.getElementById('id_user').textContent;
                     const mensaje = document.getElementById('id_user').textContent;
-                    iframe.contentWindow.postMessage(mensaje, 'http://localhost:4200'); // Asegúrate de usar el origen correcto
+                    iframe.contentWindow.postMessage(mensaje, 'https://sie.iest.edu.mx'); // Asegúrate de usar el origen correcto
                     console.log("Se envio el mensaje")
                 };
             }
