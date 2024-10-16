@@ -13,7 +13,7 @@ class adminEventosController
         $auth=$_SESSION['auth']??false;
         $tipo=$_SESSION['jerarquia']??0;
         if(!$auth ||$tipo!=7){
-            header("Location: http://localhost/IESTEventos/");
+            header("Location: https://sie.iest.edu.mx/IESTEventos/");
         }
         $router->render('vistas/adminEventos/index', []);
     }

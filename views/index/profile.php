@@ -4,7 +4,7 @@ var idUser = <?php echo $_SESSION['id_user']; ?>;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js">
 </script>
 <div class="intro-user-profile">
-    <img style="width:200px;" src="http://localhost/IESTEventos/build/img/LogoCode.png">
+    <img style="width:200px;" src="https://sie.iest.edu.mx/IESTEventos/build/img/LogoCode.png">
 </div>
 
 <div id="rutaIndex" class="indexCalendar">
@@ -151,6 +151,6 @@ var idUser = <?php echo $_SESSION['id_user']; ?>;
 </div>
 
 <?php $script = "
-    <script src='http://localhost/IESTEventos/build/js/index/profile.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/index/profile.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js'></script>
 "; ?>

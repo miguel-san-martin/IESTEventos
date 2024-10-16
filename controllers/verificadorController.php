@@ -14,7 +14,7 @@ class verificadorController {
         $tipo = $_SESSION['tipo'] ?? 0; // Si no está definida la sesión 'tipo', se asigna 0
         // Si el usuario no está autenticado o su tipo no es 6, redireccionar a la página principal
         if (!$auth || $tipo != 6) {
-            header("Location: http://localhost/IESTEventos/");
+            header("Location: https://sie.iest.edu.mx/IESTEventos/");
            
         }
         // Renderizar la vista para el Vice Rector

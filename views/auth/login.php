@@ -54,7 +54,7 @@
     </div>
 </div>
 <?php $script = "
-    <script src='http://localhost/IESTEventos/build/js/animacion/login.js'></script>
-    <script src='http://localhost/IESTEventos/build/js/auth/login.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/animacion/login.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/auth/login.js'></script>
 
 "; ?>

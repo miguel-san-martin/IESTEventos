@@ -64,7 +64,7 @@ const evento = {
 </script>
 <div>
     <div class="bg-grisBajo">
-        <a class=""href="http://localhost/IESTEventos/Coordinador" style="font-size:2rem;"><span>/Regresar al DashBoard</span></a>
+        <a class=""href="https://sie.iest.edu.mx/IESTEventos/Coordinador" style="font-size:2rem;"><span>/Regresar al DashBoard</span></a>
     </div>
 </div>
 <div class="dashboard-derecho">
@@ -418,6 +418,6 @@ const evento = {
 </div>
 <?php endforeach;?>
 <?php $script = "
-    <script src='http://localhost/IESTEventos/build/js/vistas/coordinador/editarEvento.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/coordinador/editarEvento.js'></script>
 
 "; ?>

@@ -22,6 +22,6 @@
     </table>
 </div>
 <?php $script="
-    <script src='http://localhost/IESTEventos/build/js/vistas/rh/dashboardrh.js'></script>
-    <script src='http://localhost/IESTEventos/build/js/general/variables.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/vistas/rh/dashboardrh.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/general/variables.js'></script>
 " ;?>

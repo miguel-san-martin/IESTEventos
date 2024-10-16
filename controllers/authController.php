@@ -79,7 +79,7 @@ class authController
             exit();
         } else {
             if($_SESSION['auth']??false){
-                header("Location: http://localhost/IESTEventos/");
+                header("Location: https://sie.iest.edu.mx/IESTEventos/");
             }
             $router->render('auth/login', []);
         }
@@ -88,7 +88,7 @@ class authController
     public static function logout()
     {
         session_destroy();
-        header("Location: http://localhost/IESTEventos/");
+        header("Location: https://sie.iest.edu.mx/IESTEventos/");
         
     }
 
@@ -102,7 +102,7 @@ class authController
                 break;
             case 2:
                 $id_user = $_SESSION['id_user'];
-                header("Location: http://localhost/IESTEventos/");
+                header("Location: https://sie.iest.edu.mx/IESTEventos/");
                 break;
             case 3:
                 header('Location: DashboardRh');

@@ -2,7 +2,7 @@
 
 <?php $script = "
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' integrity='sha512-egJ/Y+22P9NQ9aIyVCh0VCOsfydyn8eNmqBy+y2CnJG+fpRIxXMS6jbWP8tVKp0jp+NO5n8WtMUAnNnGoJKi4w==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
-    <script src='http://localhost/IESTEventos/build/js/index/calendar.js'></script>
+    <script src='https://sie.iest.edu.mx/IESTEventos/build/js/index/calendar.js'></script>
 
 "; ?>
 <!--<div class="indexCalendar">
@@ -73,7 +73,7 @@
   <div class="box-miniEventos">
         <div class="grid-contenedor-miniEvento">
             <div class="cell_miniEvento cell1_miniEvento">
-                <img src="http://localhost/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
+                <img src="https://sie.iest.edu.mx/IESTEventos/build/img/eventos/<?php echo ($evento['token']);?>/<?php echo ($evento['banner_principal']);?>">
             </div>
             <div class="cell_miniEvento cell2_miniEvento">
                 <?php echo ucwords($evento['nombre'])?>
