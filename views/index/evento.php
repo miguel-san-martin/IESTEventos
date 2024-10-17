@@ -7,12 +7,13 @@
 <?php if($existeSubEventos): ?>
     <script>
         var eventos = <?php echo json_encode($subeventos); ?>;
-        var existeSubEventos = <?php echo $existeSubEventos ?>;
+        var existeSubEventos = <?php echo $existeSubEventos;?>;
+    
     </script>
 <?php else: ?>
-    <script>
+<!--     <script>
         var existeSubEventos = false;
-    </script>
+    </script> -->
 <?php endif; ?>
 
 <?php
@@ -27,6 +28,7 @@ foreach ($eventoselecc['info'] as $evento):
 </div>
 
 <div class="title-main"> Información del Evento </div>
+
 
 <div class="grid-container-mainEvento">
     <div class="cell-mainEvento cell1-mainEvento">
@@ -82,19 +84,32 @@ foreach ($eventoselecc['info'] as $evento):
     <div class="cell-mainEvento cell8-mainEvento">
         <?php echo ucfirst($evento['descripcion']);?>
     </div>
-    <div class="cell-mainEvento cell9-mainEvento">
-        <!-- <div class="btn-uno">
-            <div>
-                <i class="fa-solid fa-circle-plus"></i>&nbsp;
-                Información:
-                &nbsp;<i class="fa-regular fa-circle-user"></i>&nbsp;
-                <?php echo ucwords($evento['creador_nombre'].' '.$evento['creador_apellidoP']);?>
-            </div>
-        </div> -->
-    </div>
-    <?php if($existeSubEventos AND $_SESSION['auth']??false):?>
+    <div class="cell-mainEvento cell9-mainEvento" style="padding: 1rem; display: flex;flex-direction:column">
+        <?php if($existeSubEventos AND $_SESSION['auth']??false):?>
+        
+        <table border="1" cellspacing="0" cellpadding="5">
+            Subeventos
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach($subeventos as $se){
+
+                echo "<tr>";
+                echo "<td>".$se['nombre_eventodia']."</td>";
+                echo "<td>".$se['fecha_eventodia']."</td>";
+                echo "</tr>";
+            }
+            ?>
+        </tbody>
+    </table>
 
     <?php endif; ?>
+    </div>
+
     <div class="cell-mainEvento cell10-mainEvento">
         <?php if($_SESSION['auth']??false):?>
         <?php if(!$registrado):?>
