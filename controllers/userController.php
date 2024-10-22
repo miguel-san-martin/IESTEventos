@@ -89,7 +89,7 @@ class userController
 
         $paramsSelectSubEventosofEventos = array(
             'servicio' => 'consulta',
-            'accion' => 'SelectSubEventosofEventos',
+            'accion' => 'SelectAllEventosbyToken',
             'tipoRespuesta' => 'json',
             'token' => $ideventoseleccionado,
         );
@@ -97,11 +97,12 @@ class userController
         // Decodificar el resultado JSON en un array asociativo
         // Inicializar el array $arraysub
         $arraysub = array();
-
+        
         // Verificar si la clave "info" del array no está vacía
         if (!empty($SelectSubEventosofEventos["info"])) {
             $existeSubEventos = true;
-
+            
+            //var_dump($SelectSubEventosofEventos["info"]);
             // Recorrer los datos dentro de "info" y guardarlos en el array $arraysub
             foreach ($SelectSubEventosofEventos["info"] as $fila) {
                 $arraysub[] = $fila;

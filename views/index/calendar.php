@@ -55,7 +55,14 @@
 
         <div class="cell_eventoCalendar cell5_eventoCalendar">
             <div class="eventoCalendarTipo">
-                <?php echo ucwords($evento['categoria'])?>
+
+                <?php
+                if(!isset($evento['categoria'])){
+                    echo 'Sin categoria';
+                } else {
+                    echo ucwords($evento['categoria']);
+                }
+                    ?>
             </div>
         </div>
         <div class="cell_eventoCalendar cell6_eventoCalendar">
