@@ -35,6 +35,7 @@
 </div>-->
 <br>
 <?php foreach ($eventos as $evento): ?>
+    <?php var_dump($evento) ?>
 <div id="fadeInEvento" class="animatable fadeInDown" style="padding: 1rem">
     <div class="grid-contenedor-eventoCalendar" onclick="location.href='evento?id=<?php echo $evento['token']?>';">
         <div class="cell_eventoCalendar cell1_eventoCalendar">

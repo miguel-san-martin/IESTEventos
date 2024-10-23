@@ -1130,11 +1130,12 @@
               <div class="footer-content pt-5 pb-1">
                   <div class="row">
                       <div class="col-xl-4 col-lg-4 mb-50">
-                          <div class="footer-widget">
-                              <div class="footer-text">
-                                  <p>Instituto de Estudios Superiores de Tamaulipas, es una institución acreditada lisa <br> y llana por la Federación de Instituciones Mexicanas Particulares de Educación Superior A.C.</p>
+                          <div class="footer-widget" >
+                              <div class="footer-text" style="text-align: center;">
+                                <p>Todos los derechos reservados. Consulta el <a href="https://www.anahuac.mx/iest/aviso-de-privacidad-experiencia-alumno-anahuac" style="color: #ffffff;" >Aviso de privacidad </a>, el <a style="color: #ffffff;" href="https://www.anahuac.mx/iest/aviso-de-privacidad-experiencia-alumno-anahuac"> Aviso de privacidad de la experiencia del alumno</a> .</p>
                               </div>
-                              <div class="footer-social-icon">
+                              <div class="footer-social-icon" style="text-align: center;">
+                              <img style="max-width: 100px;" src="https://www.anahuac.mx/iest/sites/default/files/gbb-uploads/logotipo-institucional-dcnfov.png">
                                 </a>
                               </div>
                           </div>
