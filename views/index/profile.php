@@ -16,7 +16,7 @@ var idUser = <?php echo $_SESSION['id_user']; ?>;
 <div class="title-main"> Mi Perfil </div>
 <div class="grid-container-profile">
     <div class="cell_profile cell1_profile">
-        <!-- <img class="photo-user-profile" src=""> -->
+        <img class="photo-user-profile" src="<?php echo $_SESSION['fotografia']??"https://www.citypng.com/public/uploads/preview/download-profile-user-round-orange-icon-symbol-png-11639594360ksf6tlhukf.png"; ?>">
     </div>
     <div class="cell_profile cell3_profile">
         <div class="title-profile-card">
@@ -39,6 +39,7 @@ var idUser = <?php echo $_SESSION['id_user']; ?>;
         </div>
     </div>
     <div class="cell_profile cell7_profile">
+        <img class="qr-user-profile"src="data:image/png;base64,<?php echo $qrCode; ?>" alt="QR Code">
     </div>
     <div class="cell_profile cell8_profile">
         <div class="title-profile-card">
